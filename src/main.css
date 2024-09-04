@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sliderApp {
+  height: 30vh;
+}
+.missionApp {
+  height: fit-content;
+}
+.marketingApp {
+  height: fit-content;
+}
+.eventApp {
+  height: fit-content;
+}
+.jobApp {
+  height: fit-content;
+}
+.referenceApp {
+  height: fit-content;
+}
+.footer {
+  height: fit-content;
+}
+.swiper-slide {
+  width: 30%;
+  overflow-y: hidden !important;
+}
+.headerMarginGap {
+  margin-top: 2vh;
+}
+
+/* Extra extra small screens (xxs) */
+@media (min-width: 320px) {
+  .sliderApp {
+    height: 30vh;
+  }
+  .swiper-slide {
+    height: 30vh !important;
+  }
+  .siderHeaderGap {
+    padding-top: 5vh;
+  }
+  .headerMarginGap {
+    margin-top: 2vh;
+  }
+}
+
+/* Extra small screens (xs) */
+@media (min-width: 480px) {
+  /* xs: 480px */
+  .sliderApp {
+    height: 30vh;
+  }
+  .swiper-slide {
+    height: 30vh !important;
+  }
+  .siderHeaderGap {
+    padding-top: 5vh;
+  }
+  .headerMarginGap {
+    margin-top: 2vh;
+  }
+}
+
+/* Small screens (sm) and up */
+@media (min-width: 640px) {
+  /* sm: 640px */
+  .sliderApp {
+    height: 30vh;
+  }
+  .swiper-slide {
+    height: 30vh !important;
+  }
+  .siderHeaderGap {
+    padding-top: 5vh;
+  }
+  .headerMarginGap {
+    margin-top: 3vh;
+  }
+}
+
+/* Medium screens (md) and up */
+@media (min-width: 768px) {
+  /* md: 768px */
+  .sliderApp {
+    height: 50vh;
+  }
+  .swiper-slide {
+    height: 50vh !important;
+  }
+  .siderHeaderGap {
+    padding-top: 5vh;
+  }
+  .headerMarginGap {
+    margin-top: 4vh;
+  }
+}
+
+/* Large screens (lg) and up */
+@media (min-width: 1024px) {
+  /* lg: 1024px */
+  .sliderApp {
+    height: 50vh;
+  }
+  .swiper-slide {
+    height: 50vh !important;
+  }
+  .siderHeaderGap {
+    padding-top: 10vh;
+  }
+  .headerMarginGap {
+    margin-top: 6vh;
+  }
+}
+
+/* Extra large screens (xl) and up */
+@media (min-width: 1280px) {
+  /* xl: 1280px */
+  .sliderApp {
+    height: 100vh;
+  }
+  .swiper-slide {
+    height: 100vh !important;
+  }
+  .siderHeaderGap {
+    padding-top: 10vh;
+  }
+  .headerMarginGap {
+    margin-top: 6vh;
+  }
+}
+
+/* 2X extra large screens (2xl) and up */
+@media (min-width: 1536px) {
+  /* 2xl: 1536px */
+  .sliderApp {
+    height: 100vh;
+  }
+  .swiper-slide {
+    height: 100vh !important;
+  }
+  .siderHeaderGap {
+    padding-top: 10vh;
+  }
+  .headerMarginGap {
+    margin-top: 6vh;
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.red-underline:hover:after {
+  background-color: #eb4224; /* HAKKIMIZDA rengi */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.orange-underline:hover:after {
+  background-color: #f37423; /* HİZMETLERİMİZ rengi */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.sari-underline:hover:after {
+  background-color: #f9c80e; /* REFERANSLARIMIZ rengi */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.green-underline:hover:after {
+  background-color: #519f46; /* REFERANSLARIMIZ rengi */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.blue-underline:hover:after {
+  background-color: #2281c4; /* İLETİŞİM rengi */
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent) !important;
+  mask-image: linear-gradient(black, transparent) !important;
+}
+.mask2 {
+  -webkit-mask-image: linear-gradient(transparent, black) !important;
+  mask-image: linear-gradient(transparent, black) !important;
+}
