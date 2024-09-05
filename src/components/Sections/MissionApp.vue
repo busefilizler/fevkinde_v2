@@ -50,3 +50,21 @@
     </div>
   </div>
 </template>
+<style scoped>
+@media (min-width: 320px) {
+  .justTel {
+    display: flex;
+  }
+  .justPc {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .justTel {
+    display: none;
+  }
+  .justPc {
+    display: flex;
+  }
+}
+</style>
