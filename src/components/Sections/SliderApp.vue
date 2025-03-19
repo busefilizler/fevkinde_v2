@@ -9,7 +9,7 @@
         :modules="modules"
         class="siderHeaderGap w-full flex flex-col"
         :autoplay="{
-          delay: 8000,
+          delay: 10000,
           disableOnInteraction: false
         }"
       >
