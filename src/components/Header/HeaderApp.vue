@@ -21,7 +21,7 @@
     <!-- Mobil Menü (Hamburger) -->
     <div class="md:hidden">
       <button @click="toggleMenu" class="text-2xl focus:outline-none">
-        ☰
+        {{ isMenuOpen ? '✖' : '☰' }}
       </button>
     </div>
 
@@ -31,7 +31,7 @@
         <div
           v-for="item in menuItems"
           :key="item.id"
-          class="font-bold tel:text-sm sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl custom-font cursor-pointer hover-underline-animation py-2 "
+          class="font-bold tel:text-sm sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl custom-font cursor-pointer hover-underline-animation py-2"
           :class="item.color"
           @click="scrollToSection(item.id); toggleMenu()"
         >
