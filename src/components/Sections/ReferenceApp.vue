@@ -47,6 +47,7 @@
         <img src="@/assets/logolar/34.webp" class="h-auto max-w-full" />
         <img src="@/assets/logolar/35.webp" class="h-auto max-w-full" />
         <img src="@/assets/logolar/36.webp" class="h-auto max-w-full" />
+
         <img src="@/assets/logolar/37.webp" class="h-auto max-w-full" />
         <img src="@/assets/logolar/38.webp" class="h-auto max-w-full" />
         <img src="@/assets/logolar/39.webp" class="h-auto max-w-full" />
@@ -54,18 +55,8 @@
         <img src="@/assets/logolar/41.webp" class="h-auto max-w-full" />
         <img src="@/assets/logolar/42.webp" class="h-auto max-w-full" />
         <img src="@/assets/logolar/43.webp" class="h-auto max-w-full" />
-        <img src="@/assets/logolar/44.webp" class="h-auto max-w-full" />
-        <img src="@/assets/logolar/45.webp" class="h-auto max-w-full" />
-        <!-- Empty placeholders for grid alignment -->
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
         <img src="@/assets/logolar/46.webp" class="h-auto max-w-full" />
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!-- Empty placeholders for grid alignment -->
         <div></div>
       </div>
     </div>
