@@ -1,7 +1,9 @@
 <template>
   <div id="event" class="bg-white w-full eventApp px-[5%] py-[3%]">
-    <!-- Başlık: her zaman üstte, sola yaslı -->
-    <h2 class="relative flex flex-col items-start -rotate-6 uppercase italic pl-[4%] mb-3 md:mb-10 leading-none">
+    <!-- Başlık: mobilde ortada, md+ sola yaslı -->
+    <h2
+      class="relative flex w-full flex-col items-center md:items-start -rotate-6 uppercase italic pl-0 md:pl-[4%] mb-3 md:mb-10 leading-none"
+    >
       <span
         class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font -rotate-3"
       >
@@ -15,9 +17,9 @@
     </h2>
 
     <!-- Maddeler + Video: yan yana, dikey ortalı -->
-    <div class="flex flex-row items-center gap-[3%] md:gap-[4%] pt-5 sm:pt-8">
+    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-[4%] pt-5 sm:pt-8">
       <div
-        class="w-[35%] md:w-[30%] shrink-0 flex flex-col items-center text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font leading-tight md:leading-loose"
+        class="w-full md:w-[30%] shrink-0 grid grid-cols-2 md:flex md:flex-col md:items-center justify-items-center gap-x-4 gap-y-1 text-center text-[11px] sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font leading-snug md:leading-loose"
       >
         <div>Proje Kurgu ve Yönetimi</div>
         <div>Stratejik Planlama</div>
@@ -33,7 +35,7 @@
         <div>FUAR Organizasyonu</div>
       </div>
 
-      <div class="w-[65%] md:w-[70%] flex items-center gap-1 md:gap-3">
+      <div class="w-full md:w-[70%] flex items-center gap-1 md:gap-3">
         <i
           @click="prevVideo"
           class="fa-solid fa-chevron-left cursor-pointer text-sm md:text-2xl text-gray-400 hover:text-gray-600 shrink-0 transition-colors"

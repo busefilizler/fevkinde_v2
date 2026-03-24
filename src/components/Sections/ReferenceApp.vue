@@ -1,15 +1,17 @@
 <template>
   <div
     id="referans"
-    class="referenceApp bg-white flex flex-col items-center gap-6 md:gap-12 justify-center pb-[2%] pt-[6%]"
+    class="referenceApp bg-white flex flex-col items-center gap-6 justify-start pb-16 pt-[6%] sm:pb-20 md:gap-12 md:pb-24 lg:pb-32"
   >
     <h2
       class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl -rotate-3 font-black custom-font"
     >
       REFERANSLARIMIZ
     </h2>
-    <div class="pb-[5%] px-[5%] w-full">
-      <div class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-9 gap-2 sm:gap-3 md:gap-[3%] px-2 pb-5 items-center">
+    <div class="w-full px-[5%] pb-4 md:pb-6">
+      <div
+        class="grid grid-cols-5 items-center gap-2 px-2 pb-8 sm:grid-cols-6 sm:gap-3 sm:pb-10 md:grid-cols-7 md:gap-[3%] md:pb-12 lg:grid-cols-8 lg:pb-14 xl:grid-cols-9 xl:pb-16"
+      >
         <template v-for="(item, index) in paddedLogoItems" :key="`logo-${index}`">
           <div v-if="item === null" aria-hidden="true"></div>
           <img

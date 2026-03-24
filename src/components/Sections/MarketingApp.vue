@@ -1,7 +1,7 @@
 <template>
   <div id="digital" class="bg-[#2DA4A4] marketingApp h-full w-full overflow-hidden pt-10">
     <div
-      class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font -rotate-6 relative top-0 pl-[1%]"
+      class="text-black text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font -rotate-6 relative top-0 pl-[1%]"
     >
       <h2
         class="absolute flex flex-col items-center justify-center pt-[4%] pl-[4%] -rotate-6 uppercase italic"
@@ -22,7 +22,7 @@
         :modules="modules"
         class="mySwiper"
         :autoplay="{
-          delay: 2000,
+          delay: 200000,
           disableOnInteraction: false
         }"
       >
@@ -31,9 +31,9 @@
         </swiper-slide>
       </swiper>
     </div>
-    <div class="relative w-full flex flex-col sm:flex-row justify-start pt-[5%] px-[5%]">
+    <div class="relative w-full flex flex-col sm:flex-row justify-start pt-0 sm:pt-[5%] px-[5%]">
       <div
-        class="flex flex-col items-center text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font w-full sm:w-1/2 sm:-mt-12"
+        class="flex flex-col items-stretch self-start w-fit max-w-full text-center sm:w-1/2 sm:max-w-none sm:self-auto sm:items-center sm:-mt-12 text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font"
       >
         <div>Sosyal Medya Yönetimi</div>
         <div>Kriz Yönetimi</div>
@@ -43,7 +43,7 @@
         <div>Masabaşı Video Üretimi</div>
         <div>Youtube Program Çekimleri</div>
       </div>
-      <div class="w-full sm:w-1/2 mt-4 sm:mt-0">
+      <div class="hidden sm:block w-full sm:w-1/2 sm:mt-0">
         <div class="flex flex-col items-center sm:pl-[25%]">
           <div
             class="w-[60%] sm:w-[50%] rounded-2xl bg-[#00FC00] text-center py-[2%] text-xxs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl sm:ml-[20%]"
@@ -72,7 +72,7 @@
       />
     </div>
     <div
-      class="text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font w-full text-center pt-[5%] hidden md:block"
+      class="text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font w-full text-center px-[5%] pt-[5%] pb-2 sm:pb-0"
     >
       Dijital dünya ile entegre iletişim ve tasarım stratejilerimizle markanızı "marka" yapıyoruz
     </div>
