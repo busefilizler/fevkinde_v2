@@ -17,8 +17,8 @@ module.exports = {
         siyah: '#3D3D3D'
       },
       fontSize: {
-        xxs: ['8px', '12px'],
-        xxxs: ['6px', '10px']
+        xxs: ['10px', '14px'],
+        xxxs: ['8px', '12px']
       }
     },
     screens: {

@@ -1,11 +1,9 @@
 <template>
-  <header class="bg-transparent flex items-center justify-between px-[10%] w-full h-full">
-    <!-- Logo -->
-    <div class="w-[20%]">
-      <img src="@/assets/fevkinde_logo.webp" alt="fevkinde_ajans_logo" />
+  <header class="bg-transparent flex items-center justify-between px-[5%] md:px-[10%] w-full h-full relative">
+    <div class="w-[30%] md:w-[20%]">
+      <img src="@/assets/fevkinde_logo.webp" alt="fevkinde_ajans_logo" class="max-w-full h-auto" />
     </div>
 
-    <!-- Masaüstü Menü -->
     <nav class="hidden md:flex flex-row gap-2 sm:gap-3 md:gap-3 lg:gap-6 xl:gap-8 2xl:gap-10">
       <div
         v-for="item in menuItems"
@@ -18,20 +16,18 @@
       </div>
     </nav>
 
-    <!-- Mobil Menü (Hamburger) -->
     <div class="md:hidden">
-      <button @click="toggleMenu" class="text-2xl focus:outline-none">
+      <button @click="toggleMenu" class="text-2xl focus:outline-none min-w-[44px] min-h-[44px] flex items-center justify-center">
         {{ isMenuOpen ? '✖' : '☰' }}
       </button>
     </div>
 
-    <!-- Mobil Menü İçeriği -->
     <transition name="slide">
-      <div v-if="isMenuOpen" class="absolute top-[6vh] left-0 w-full bg-white shadow-lg flex flex-col items-center py-4 md:hidden">
+      <div v-if="isMenuOpen" class="absolute top-full left-0 w-full bg-white shadow-lg flex flex-col items-center py-4 md:hidden z-50">
         <div
           v-for="item in menuItems"
           :key="item.id"
-          class="font-bold tel:text-sm sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl custom-font cursor-pointer hover-underline-animation py-2"
+          class="font-bold text-sm sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl custom-font cursor-pointer hover-underline-animation py-3 min-h-[44px] flex items-center"
           :class="item.color"
           @click="scrollToSection(item.id); toggleMenu()"
         >
@@ -70,12 +66,11 @@ export default {
 };
 </script>
 
-<style>
-/* Menü açılma animasyonu */
+<style scoped>
 .slide-enter-active, .slide-leave-active {
-  transition: transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
-.slide-enter, .slide-leave-to {
+.slide-enter-from, .slide-leave-to {
   transform: translateY(-10px);
   opacity: 0;
 }

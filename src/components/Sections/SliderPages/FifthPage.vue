@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div class="bg-[#D4E2D5] flex w-full swipperSliderHeight items-center justify-center gap pt-10">
     <img
       src="@/assets/kare.webp"
@@ -17,9 +17,9 @@
       class="absolute top-[20%] left-[10%] !h-[30%] sm:!h-[30%] md:!h-[20%] lg:!h-[20%] xl:!h-[20%] 2xl:!h-[20%] w-auto mask1 opacity-50"
     />
     <div
-      class="custom-font italic text-black text-md sm:text-xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl font-black h-full flex justify-center items-center flex-col z-20"
+      class="custom-font italic text-black text-base sm:text-xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl font-black h-full flex justify-center items-center flex-col z-20"
     >
-      <div class="text-lg sm:text-xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl pb-[2%]">
+      <div class="text-xl sm:text-xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl pb-[2%]">
         "DEMİŞTİK"
       </div>
       <div class="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl pb-[2%]">
@@ -36,4 +36,3 @@
 <script>
 export default {}
 </script>
-<style lang=""></style>

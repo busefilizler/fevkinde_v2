@@ -13,7 +13,7 @@
           disableOnInteraction: false
         }"
       >
-        <div class="absolute bg-transparent top-0 headerMarginGap z-50">
+        <div class="absolute bg-transparent top-0 headerMarginGap z-50 w-full">
           <HeaderApp />
         </div>
         <swiper-slide v-for="(component, index) in sliderComponents" :key="index">
@@ -57,105 +57,71 @@ const sliderComponents = [
   content: '';
   position: absolute;
   z-index: -1;
-  top: 50;
-  left: 25;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 80px;
   height: 100px;
   background-color: #3d3c3c;
-  border-radius: 100% 0% 0% 100%; /* Yarı daire şeklini elde etmek için */
+  border-radius: 100% 0% 0% 100%;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff !important;
-  position: relative; /* Ana öğe için pozisyonu belirtin */
+  position: relative;
 }
 
 .swiper-button-prev::before {
-  transform: rotate(180deg); /* Yarı dairenin ters yönde olmasını sağlar */
+  transform: translate(-50%, -50%) rotate(180deg);
 }
-/* Small Screen tel */
-@media (min-width: 320px) and (max-width: 414px) {
+
+@media (max-width: 639px) {
   .gap {
     gap: 2rem;
   }
   :root {
-    --swiper-navigation-size: 6px !important;
+    --swiper-navigation-size: 12px !important;
   }
   .swiper-button-prev::before,
   .swiper-button-next::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 50;
-    left: 25;
-    width: 20px;
-    height: 25px;
-    background-color: #3d3c3c;
-    border-radius: 100% 0% 0% 100%; /* Yarı daire şeklini elde etmek için */
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: #fff !important;
-    position: relative; /* Ana öğe için pozisyonu belirtin */
+    width: 30px;
+    height: 40px;
   }
 }
 
-@media (min-width: 415px) and (max-width: 639px) {
-  .gap {
-    gap: 2rem;
-  }
-  :root {
-    --swiper-navigation-size: 6px !important;
-  }
-  .swiper-button-prev::before,
-  .swiper-button-next::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 50;
-    left: 25;
-    width: 20px;
-    height: 25px;
-    background-color: #3d3c3c;
-    border-radius: 100% 0% 0% 100%; /* Yarı daire şeklini elde etmek için */
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: #fff !important;
-    position: relative; /* Ana öğe için pozisyonu belirtin */
-  }
-}
-
-/* Medium Screen */
 @media (min-width: 640px) and (max-width: 767px) {
   .gap {
     gap: 3rem;
   }
+  :root {
+    --swiper-navigation-size: 18px !important;
+  }
+  .swiper-button-prev::before,
+  .swiper-button-next::before {
+    width: 40px;
+    height: 50px;
+  }
 }
-/* Large Screen */
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .gap {
     gap: 2rem;
   }
 }
 
-/* Extra Large Screen */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .gap {
     gap: 3rem;
   }
 }
 
-/* 2XL Screen */
 @media (min-width: 1280px) and (max-width: 1680px) {
   .gap {
     gap: 4rem;
   }
 }
-@media (min-width: 1681px) and (max-width: 2808px) {
+@media (min-width: 1681px) {
   .gap {
     gap: 1rem;
   }
@@ -165,32 +131,12 @@ const sliderComponents = [
   height: 30vh;
 }
 
-@media (min-width: 480px) {
-  .swipperSliderHeight {
-    height: 30vh;
-  }
-}
-@media (min-width: 640px) {
-  .swipperSliderHeight {
-    height: 30vh;
-  }
-}
 @media (min-width: 768px) {
   .swipperSliderHeight {
     height: 50vh;
   }
 }
-@media (min-width: 1024px) {
-  .swipperSliderHeight {
-    height: 50vh;
-  }
-}
 @media (min-width: 1280px) {
-  .swipperSliderHeight {
-    height: 100vh;
-  }
-}
-@media (min-width: 1536px) {
   .swipperSliderHeight {
     height: 100vh;
   }

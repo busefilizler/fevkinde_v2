@@ -26,13 +26,14 @@
   </div>
 </template>
 <script setup>
+import { defineAsyncComponent } from 'vue'
 import FevkindeAjansLayout from '@/layout/FevkindeAjansLayout.vue'
 import SliderApp from '@/components/Sections/SliderApp.vue'
-import MissionApp from '@/components/Sections/MissionApp.vue'
-import MarketingApp from '@/components/Sections/MarketingApp.vue'
-import EventApp from '@/components/Sections/EventApp.vue'
-import JobApp from '@/components/Sections/JobApp.vue'
-import ReferenceApp from '@/components/Sections/ReferenceApp.vue'
-import Footer from '@/components/Footer/FooterApp.vue'
+
+const MissionApp = defineAsyncComponent(() => import('@/components/Sections/MissionApp.vue'))
+const MarketingApp = defineAsyncComponent(() => import('@/components/Sections/MarketingApp.vue'))
+const EventApp = defineAsyncComponent(() => import('@/components/Sections/EventApp.vue'))
+const JobApp = defineAsyncComponent(() => import('@/components/Sections/JobApp.vue'))
+const ReferenceApp = defineAsyncComponent(() => import('@/components/Sections/ReferenceApp.vue'))
+const Footer = defineAsyncComponent(() => import('@/components/Footer/FooterApp.vue'))
 </script>
-<style></style>

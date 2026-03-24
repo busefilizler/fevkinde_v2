@@ -1,26 +1,26 @@
-<template lang="">
+<template>
   <div
     id="iletisim"
-    class="bg-black w-full h-full px-[7%] flex flex-col justify-center gap-8 pb-3 overflow-y-auto"
+    class="bg-black w-full h-full px-[5%] md:px-[7%] flex flex-col justify-center gap-4 md:gap-8 pb-3 overflow-y-auto"
   >
-    <div class="flex justify-between px-[5%] pt-[5%]">
+    <div class="flex flex-col sm:flex-row justify-between px-[3%] md:px-[5%] pt-[5%] gap-4">
       <div
-        class="flex justify-center flex-col pl-[3%] -rotate-3 font-black custom-font italic w-[50%]"
+        class="flex justify-center flex-col pl-[3%] -rotate-3 font-black custom-font italic w-full sm:w-[50%]"
       >
         <div
-          class="font text-sm sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-[#ffff] uppercase"
+          class="text-base sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-[#ffff] uppercase"
         >
           {{ currentSlogan }}
         </div>
         <div
-          class="font text-sm sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-[#ffff] uppercase"
+          class="text-base sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-[#ffff] uppercase"
         >
           EVERY DAY
         </div>
       </div>
-      <div class="flex justify-center items-center polygon !-rotate-3 -mt-[5%]">
+      <div class="flex justify-center items-center polygon !-rotate-3 sm:-mt-[5%]">
         <div
-          class="bg-[#D7D4D1] hover:bg-[#b2b1af] text-black custom-font items-center text-xxs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black px-5 py-2 !-rotate-3 italic"
+          class="bg-[#D7D4D1] hover:bg-[#b2b1af] text-black custom-font items-center text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black px-5 py-2 !-rotate-3 italic"
         >
           <a href="mailto:hi@fevkinde.com.tr">BİZE ULAŞIN</a>
         </div>
@@ -31,15 +31,17 @@
         <img
           src="@/assets/FevkindeBeyazLogo.webp"
           alt="fevkinde_ajans_logo"
-          class="pt-[2%] w-1/6 sm:w-1/6 md:w-1/5 lg:w-1/6 xl:w-1/6 2xl:w-1/6"
+          loading="lazy"
+          decoding="async"
+          class="pt-[2%] w-1/4 sm:w-1/6 md:w-1/5 lg:w-1/6 xl:w-1/6 2xl:w-1/6"
         />
       </div>
       <div class="w-full px-[5%] text-[#D7D4D1]">
         <div class="divider w-full py-[3%]"></div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center sm:justify-between gap-2 sm:gap-0">
           <div class="flex flex-row items-center gap-2">
             <div
-              class="text-xxxs sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl hover:underline"
+              class="text-xxs sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl hover:underline"
             >
               <i class="fa-solid fa-location-dot"></i>
               /İstanbul & Balıkesir
@@ -47,19 +49,17 @@
           </div>
           <div class="flex flex-row items-center gap-2 cursor-pointer">
             <div
-              class="text-xxxs sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl hover:underline"
+              class="text-xxs sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl hover:underline"
             >
               <i class="fa fa-youtube-play"></i>
-
               <a href="https://www.youtube.com/@fevkindereklam" target="_blank"> /Fevkindereklam</a>
             </div>
           </div>
           <div class="flex flex-row items-center gap-2 cursor-pointer">
             <div
-              class="text-xxxs sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl hover:underline"
+              class="text-xxs sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl hover:underline"
             >
               <i class="fa-brands fa-linkedin-in"></i>
-
               <a href="https://www.linkedin.com/company/fevkindeajans/" target="_blank">
                 /Fevkindeajans</a
               >
@@ -67,10 +67,9 @@
           </div>
           <div class="flex flex-row items-center gap-2 cursor-pointer">
             <div
-              class="text-xxxs sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl hover:underline"
+              class="text-xxs sm:text-sm md:text-sm lg:text-base xl:text-xl 2xl:text-2xl hover:underline"
             >
               <i class="fa fa-instagram"></i>
-
               <a href="https://www.instagram.com/fevkindeajans/" target="_blank"> /Fevkindeajans</a>
             </div>
           </div>
@@ -104,7 +103,7 @@ export default {
     }
   },
   mounted() {
-    this.intervalId = setInterval(this.changeSlogan, 1000)
+    this.intervalId = setInterval(this.changeSlogan, 3000)
   },
   beforeUnmount() {
     clearInterval(this.intervalId)

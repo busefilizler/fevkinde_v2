@@ -24,14 +24,13 @@
   height: fit-content;
 }
 .swiper-slide {
-  width: 30%;
+  width: 100% !important;
   overflow-y: hidden !important;
 }
 .headerMarginGap {
   margin-top: 2vh;
 }
 
-/* Extra extra small screens (xxs) */
 @media (min-width: 320px) {
   .sliderApp {
     height: 30vh;
@@ -47,26 +46,7 @@
   }
 }
 
-/* Extra small screens (xs) */
-@media (min-width: 480px) {
-  /* xs: 480px */
-  .sliderApp {
-    height: 30vh;
-  }
-  .swiper-slide {
-    height: 30vh !important;
-  }
-  .siderHeaderGap {
-    padding-top: 5vh;
-  }
-  .headerMarginGap {
-    margin-top: 2vh;
-  }
-}
-
-/* Small screens (sm) and up */
 @media (min-width: 640px) {
-  /* sm: 640px */
   .sliderApp {
     height: 30vh;
   }
@@ -81,9 +61,7 @@
   }
 }
 
-/* Medium screens (md) and up */
 @media (min-width: 768px) {
-  /* md: 768px */
   .sliderApp {
     height: 50vh;
   }
@@ -98,9 +76,7 @@
   }
 }
 
-/* Large screens (lg) and up */
 @media (min-width: 1024px) {
-  /* lg: 1024px */
   .sliderApp {
     height: 50vh;
   }
@@ -115,9 +91,7 @@
   }
 }
 
-/* Extra large screens (xl) and up */
 @media (min-width: 1280px) {
-  /* xl: 1280px */
   .sliderApp {
     height: 100vh;
   }
@@ -132,9 +106,7 @@
   }
 }
 
-/* 2X extra large screens (2xl) and up */
 @media (min-width: 1536px) {
-  /* 2xl: 1536px */
   .sliderApp {
     height: 100vh;
   }
@@ -167,30 +139,30 @@
 }
 
 .red-underline:hover:after {
-  background-color: #eb4224; /* HAKKIMIZDA rengi */
+  background-color: #eb4224;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
 .orange-underline:hover:after {
-  background-color: #f37423; /* HİZMETLERİMİZ rengi */
+  background-color: #f37423;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 .sari-underline:hover:after {
-  background-color: #f9c80e; /* REFERANSLARIMIZ rengi */
+  background-color: #f9c80e;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
 .green-underline:hover:after {
-  background-color: #519f46; /* REFERANSLARIMIZ rengi */
+  background-color: #519f46;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
 .blue-underline:hover:after {
-  background-color: #2281c4; /* İLETİŞİM rengi */
+  background-color: #2281c4;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
