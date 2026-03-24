@@ -17,7 +17,7 @@
     <!-- Maddeler + Video: yan yana, dikey ortalı -->
     <div class="flex flex-row items-center gap-[3%] md:gap-[4%] pt-5 sm:pt-8">
       <div
-        class="w-[35%] md:w-[30%] shrink-0 flex flex-col items-center light-font font-thin text-xxxs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl leading-tight md:leading-loose"
+        class="w-[35%] md:w-[30%] shrink-0 flex flex-col items-center text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font leading-tight md:leading-loose"
       >
         <div>Proje Kurgu ve Yönetimi</div>
         <div>Stratejik Planlama</div>

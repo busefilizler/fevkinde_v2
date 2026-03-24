@@ -18,7 +18,7 @@
     </div>
     <div class="pt-[8%] px-[5%] flex flex-col gap-[5%]">
       <p
-        class="flex flex-col light-font justify-evenly items-center text-xs sm:text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl text-center"
+        class="flex flex-col justify-evenly items-center text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font text-center"
       >
         Markaların dijital ve etkileşimli dünyada sadece var olmasını sağlamakla kalmayıp, markaya
         özel detayları öne çıkararak lider konuma gelmelerine öncülük ediyoruz.
@@ -33,7 +33,7 @@
         />
       </div>
       <p
-        class="w-full text-center light-font font-thin justify-center items-center text-xs sm:text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl px-[2%] pt-[1%] pb-[3%]"
+        class="w-full text-center text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font justify-center items-center px-[2%] pt-[1%] pb-[3%]"
       >
         Fevkinde'nin özünde markaların ne istediğini tam olarak kavrayabilmek iddiası yatar.
       </p>

@@ -33,7 +33,7 @@
     </div>
     <div class="relative w-full flex flex-col sm:flex-row justify-start pt-[5%] px-[5%]">
       <div
-        class="flex flex-col font-thin items-center text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl w-full sm:w-1/2 sm:-mt-12"
+        class="flex flex-col items-center text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font w-full sm:w-1/2 sm:-mt-12"
       >
         <div>Sosyal Medya Yönetimi</div>
         <div>Kriz Yönetimi</div>
@@ -72,7 +72,7 @@
       />
     </div>
     <div
-      class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl font-thin w-full text-center pt-[5%] hidden md:block"
+      class="text-xs sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl font-thin light-font w-full text-center pt-[5%] hidden md:block"
     >
       Dijital dünya ile entegre iletişim ve tasarım stratejilerimizle markanızı "marka" yapıyoruz
     </div>
