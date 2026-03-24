@@ -36,7 +36,7 @@
       <div
         class="w-full text-center light-font font-thin justify-center items-center text-xxs sm:text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl px-[2%] pt-[1%] pb-[3%]"
       >
-        Fevkinde'nin özünde markaların ne istediğini tam olarak kavrayabilmek iddası yatar.
+        Fevkinde'nin özünde markaların ne istediğini tam olarak kavrayabilmek iddaası yatar.
       </div>
     </div>
   </div>
