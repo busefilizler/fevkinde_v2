@@ -7,8 +7,8 @@
         class="absolute flex flex-col items-center justify-center pt-[4%] pl-[4%] -rotate-6 uppercase italic"
       >
         <img src="@/assets/icon1.webp" alt="" role="presentation" class="absolute left-[70%] w-[50%] -z-10" loading="lazy" decoding="async" />
-        <span>Digital</span>
-        <span>Marketing</span>
+        <span>DIGITAL</span>
+        <span>MARKETING</span>
       </h2>
     </div>
 

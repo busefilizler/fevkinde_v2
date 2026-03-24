@@ -69,16 +69,16 @@ export default {
   data() {
     return {
       slogan: [
-        'Campaign',
-        'Design',
-        'Marketing',
-        'Event',
-        'Creative',
-        'Social Media',
-        'Roadshow',
-        'Project',
-        'Production',
-        'Lansman'
+        'CAMPAIGN',
+        'DESIGN',
+        'MARKETING',
+        'EVENT',
+        'CREATIVE',
+        'SOCIAL MEDIA',
+        'ROADSHOW',
+        'PROJECT',
+        'PRODUCTION',
+        'LANSMAN'
       ],
       currentSloganIndex: 0
     }
