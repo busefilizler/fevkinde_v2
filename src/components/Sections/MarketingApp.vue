@@ -3,18 +3,18 @@
     <div
       class="text-black text-2xl sm:text-2xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black custom-font -rotate-6 relative top-0 pl-[1%]"
     >
-      <div
+      <h2
         class="absolute flex flex-col items-center justify-center pt-[4%] pl-[4%] -rotate-6 uppercase italic"
       >
-        <img src="@/assets/icon1.webp" class="absolute left-[70%] w-[50%] -z-10" loading="lazy" decoding="async" />
-        <div>Digital</div>
-        <div>Marketing</div>
-      </div>
+        <img src="@/assets/icon1.webp" alt="" role="presentation" class="absolute left-[70%] w-[50%] -z-10" loading="lazy" decoding="async" />
+        <span>Digital</span>
+        <span>Marketing</span>
+      </h2>
     </div>
 
     <div class="w-full">
       <div class="w-full relative">
-        <img src="@/assets/icon2.webp" class="top-0 right-[2%] w-[10%] absolute" loading="lazy" decoding="async" />
+        <img src="@/assets/icon2.webp" alt="" role="presentation" class="top-0 right-[2%] w-[10%] absolute" loading="lazy" decoding="async" />
       </div>
       <swiper
         :spaceBetween="30"
@@ -27,7 +27,7 @@
         }"
       >
         <swiper-slide v-for="(img, index) in imgSource" :key="index">
-          <img :src="img" class="h-[99%] z-50 w-full" loading="lazy" decoding="async" />
+          <img :src="img" :alt="'Fevkinde Ajans sosyal medya yönetimi örneği ' + (index + 1)" class="h-[99%] z-50 w-full" loading="lazy" decoding="async" />
         </swiper-slide>
       </swiper>
     </div>
@@ -74,7 +74,7 @@
     <div
       class="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl font-thin w-full text-center pt-[5%] hidden md:block"
     >
-      Digital Dünya ile entegre iletişim ve tasarım stratejilerimizle markanızı "marka" yapıyoruz
+      Dijital dünya ile entegre iletişim ve tasarım stratejilerimizle markanızı "marka" yapıyoruz
     </div>
     <img src="@/assets/bantt.webp" class="w-full bottom-0 z-20" loading="lazy" decoding="async" />
   </div>

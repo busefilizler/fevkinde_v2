@@ -1,72 +1,56 @@
 <template>
-  <div id="event" class="bg-white w-full eventApp pb-8 md:pb-12">
-    <div class="pt-[4%] px-[5%] flex flex-col md:flex-row gap-6 md:gap-[5%]">
-      <div class="w-full md:w-1/3 flex flex-col gap-6 md:gap-12">
-        <div
-          class="flex flex-col items-center justify-center -rotate-6 uppercase italic pl-[4%] mt-[3%] w-full"
-        >
-          <div
-            class="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font z-50 -rotate-3"
-          >
-            Event
-          </div>
-          <div
-            class="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font z-50 -rotate-3"
-          >
-            Management
-          </div>
-        </div>
-        <div
-          class="flex flex-col items-center light-font font-thin text-xs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-3xl w-full"
-        >
-          <div>Proje Kurgu ve Yönetimi</div>
-          <div>Stratejik Planlama</div>
-          <div>Lansman</div>
-          <div>POSM Planlama</div>
-          <div>Stand, Fuar Ekipmanları Tasarımı</div>
-          <div>Marka Elçiliği Projeleri (BA)</div>
-          <div>Üretim ve Tedarik</div>
-          <div>Etkinlik Kurgu ve Yönetimi</div>
-          <div>Roadshow</div>
-          <div>Gerilla Aktivite</div>
-          <div>Bayi Toplantısı</div>
-          <div>FUAR Organizasyonu</div>
-        </div>
+  <div id="event" class="bg-white w-full eventApp px-[5%] py-[3%]">
+    <!-- Başlık: her zaman üstte, sola yaslı -->
+    <h2 class="flex flex-col items-start -rotate-6 uppercase italic pl-[4%] mb-3 md:mb-10 leading-none">
+      <span
+        class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font -rotate-3"
+      >
+        Event
+      </span>
+      <span
+        class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font -rotate-3 -mt-1 md:mt-0"
+      >
+        Management
+      </span>
+    </h2>
+
+    <!-- Maddeler + Video: yan yana, dikey ortalı -->
+    <div class="flex flex-row items-center gap-[3%] md:gap-[4%] pt-5 sm:pt-8">
+      <div
+        class="w-[35%] md:w-[30%] shrink-0 flex flex-col items-center light-font font-thin text-xxxs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-3xl leading-tight md:leading-loose"
+      >
+        <div>Proje Kurgu ve Yönetimi</div>
+        <div>Stratejik Planlama</div>
+        <div>Lansman</div>
+        <div>POSM Planlama</div>
+        <div>Stand, Fuar Ekipmanları Tasarımı</div>
+        <div>Marka Elçiliği Projeleri (BA)</div>
+        <div>Üretim ve Tedarik</div>
+        <div>Etkinlik Kurgu ve Yönetimi</div>
+        <div>Roadshow</div>
+        <div>Gerilla Aktivite</div>
+        <div>Bayi Toplantısı</div>
+        <div>FUAR Organizasyonu</div>
       </div>
-      <div class="w-full md:w-2/3 md:pl-24 flex items-center gap-2">
+
+      <div class="w-[65%] md:w-[70%] flex items-center gap-1 md:gap-3">
         <i
           @click="prevVideo"
-          class="fa-solid fa-chevron-left cursor-pointer text-lg md:fa-2xl text-gray-500 shrink-0 p-2"
+          class="fa-solid fa-chevron-left cursor-pointer text-sm md:text-2xl text-gray-400 hover:text-gray-600 shrink-0 transition-colors"
         ></i>
-        <div v-if="!videoLoaded" class="relative w-full aspect-video cursor-pointer group" @click="loadVideo">
-          <img
-            :src="'https://img.youtube.com/vi/' + currentVideoId + '/hqdefault.jpg'"
-            alt="Video önizleme"
-            class="w-full h-full object-cover rounded"
-            loading="lazy"
-            decoding="async"
-          />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600 rounded-full flex items-center justify-center group-hover:bg-red-700 transition-colors">
-              <svg class="w-5 h-5 md:w-6 md:h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
-          </div>
+        <div ref="videoContainer" class="w-full aspect-video rounded-lg overflow-hidden shadow-md">
+          <iframe
+            class="w-full h-full"
+            :src="iframeSrc"
+            title="Fevkinde Ajans etkinlik ve fuar organizasyonu videoları"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
-        <iframe
-          v-else
-          ref="videoIframe"
-          class="w-full aspect-video rounded"
-          :src="videoSrc + '&autoplay=1'"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
         <i
           @click="nextVideo"
-          class="fa-solid fa-chevron-right cursor-pointer text-lg md:fa-2xl text-gray-500 shrink-0 p-2"
+          class="fa-solid fa-chevron-right cursor-pointer text-sm md:text-2xl text-gray-400 hover:text-gray-600 shrink-0 transition-colors"
         ></i>
       </div>
     </div>
@@ -74,9 +58,10 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 
 const videoUrls = [
+  'https://www.youtube.com/embed/HYnQxEdRCj0?si=Z_IFoFPqsBVwNLql&controls=0&modestbranding=1',
   'https://www.youtube.com/embed/3c-Sevziqcs?si=H-1O9d0JloHiZ0HC&controls=0&modestbranding=1',
   'https://www.youtube.com/embed/_oOWfbkSJfU?si=UPbd3ZmRbU48Z8NQ&controls=0&modestbranding=1',
   'https://www.youtube.com/embed/opUc-Rn3HB4?si=IXk6W55QJ5kcK-uK&controls=0&modestbranding=1',
@@ -86,30 +71,42 @@ const videoUrls = [
   'https://www.youtube.com/embed/DePPCR5DXsc?si=T9SSP3Wbjdz-AR9l&controls=0&modestbranding=1'
 ]
 
-const videoIds = videoUrls.map(url => {
-  const match = url.match(/embed\/([^?]+)/)
-  return match ? match[1] : ''
-})
-
 const currentIndex = ref(0)
-const videoLoaded = ref(false)
+const isVisible = ref(false)
+const videoContainer = ref(null)
+let observer = null
 
-const videoSrc = computed(() => videoUrls[currentIndex.value])
-const currentVideoId = computed(() => videoIds[currentIndex.value])
-
-function loadVideo() {
-  videoLoaded.value = true
-}
+const iframeSrc = computed(() => {
+  const base = videoUrls[currentIndex.value]
+  const autoplayParams = isVisible.value ? '&autoplay=1&mute=1' : ''
+  return base + autoplayParams
+})
 
 const nextVideo = () => {
   currentIndex.value = (currentIndex.value + 1) % videoUrls.length
-  videoLoaded.value = false
 }
 
 const prevVideo = () => {
   currentIndex.value = (currentIndex.value - 1 + videoUrls.length) % videoUrls.length
-  videoLoaded.value = false
 }
+
+onMounted(() => {
+  observer = new IntersectionObserver(
+    ([entry]) => {
+      isVisible.value = entry.isIntersecting
+    },
+    { threshold: 0.5 }
+  )
+  if (videoContainer.value) {
+    observer.observe(videoContainer.value)
+  }
+})
+
+onBeforeUnmount(() => {
+  if (observer) {
+    observer.disconnect()
+  }
+})
 </script>
 
 <style scoped>

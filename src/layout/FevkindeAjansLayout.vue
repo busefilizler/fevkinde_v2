@@ -1,26 +1,26 @@
 <template>
-  <div class="flex w-full flex-col bg-white">
-    <div class="sliderApp">
+  <main class="flex w-full flex-col bg-white">
+    <section class="sliderApp" aria-label="Ana Slider">
       <slot name="sliderApp"></slot>
-    </div>
-    <div class="missionApp">
+    </section>
+    <section class="missionApp" aria-label="Hakkımızda">
       <slot name="missionApp"></slot>
-    </div>
-    <div class="marketingApp">
+    </section>
+    <section class="marketingApp" aria-label="Dijital Pazarlama Hizmetleri">
       <slot name="marketingApp"></slot>
-    </div>
-    <div class="eventApp">
+    </section>
+    <section class="eventApp" aria-label="Etkinlik Yönetimi">
       <slot name="eventApp"></slot>
-    </div>
-    <div class="jobApp">
+    </section>
+    <section class="jobApp" aria-label="Neden Fevkinde">
       <slot name="jobApp"></slot>
-    </div>
-    <div class="referenceApp">
+    </section>
+    <section class="referenceApp" aria-label="Referanslar">
       <slot name="referenceApp"></slot>
-    </div>
-    <div class="footer">
+    </section>
+    <footer class="footer">
       <slot name="footer"></slot>
-    </div>
-  </div>
+    </footer>
+  </main>
 </template>
 <script setup></script>

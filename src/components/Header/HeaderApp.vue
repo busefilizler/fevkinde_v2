@@ -1,7 +1,7 @@
 <template>
   <header class="bg-transparent flex items-center justify-between px-[5%] md:px-[10%] w-full h-full relative">
     <div class="w-[30%] md:w-[20%]">
-      <img src="@/assets/fevkinde_logo.webp" alt="fevkinde_ajans_logo" class="max-w-full h-auto" />
+      <img src="@/assets/fevkinde_logo.webp" alt="Fevkinde Ajans - İstanbul reklam ajansı ana sayfa" class="max-w-full h-auto" />
     </div>
 
     <nav class="hidden md:flex flex-row gap-2 sm:gap-3 md:gap-3 lg:gap-6 xl:gap-8 2xl:gap-10">
