@@ -1,7 +1,8 @@
 <template>
   <div id="event" class="bg-white w-full eventApp px-[5%] py-[3%]">
     <!-- Başlık: her zaman üstte, sola yaslı -->
-    <h2 class="flex flex-col items-start -rotate-6 uppercase italic pl-[4%] mb-3 md:mb-10 leading-none">
+    <h2 class="relative flex flex-col items-start -rotate-6 uppercase italic pl-[4%] mb-3 md:mb-10 leading-none">
+      <img src="@/assets/icon1.webp" alt="" role="presentation" class="absolute left-[28%] top-[-33%] w-[30%] md:w-[20%] -z-10" loading="lazy" decoding="async" />
       <span
         class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font -rotate-3"
       >
