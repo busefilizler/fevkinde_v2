@@ -2,7 +2,7 @@
   <div id="hakkimizda" class="missionApp flex flex-row items-end w-full bg-white md:items-center overflow-hidden">
     <div class="w-[60%] md:w-[60%] px-[5%] flex flex-col justify-center md:pr-8 relative z-10 py-5 md:py-0">
       <h2
-        class="text-lg sm:text-lg md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-russo -rotate-3 font-black custom-font flex flex-col items-start pb-[4%]"
+        class="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-russo -rotate-3 font-black custom-font flex flex-col items-start pb-[4%]"
       >
         <span>SINIRLARA MEYDAN</span>
         <span>OKUMA HEDEFİ</span>

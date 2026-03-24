@@ -1,7 +1,7 @@
 <template>
   <div id="digital" class="bg-[#2DA4A4] marketingApp h-full w-full overflow-hidden pt-10">
     <div
-      class="text-black text-2xl sm:text-2xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black custom-font -rotate-6 relative top-0 pl-[1%]"
+      class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font -rotate-6 relative top-0 pl-[1%]"
     >
       <h2
         class="absolute flex flex-col items-center justify-center pt-[4%] pl-[4%] -rotate-6 uppercase italic"

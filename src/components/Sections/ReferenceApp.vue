@@ -4,7 +4,7 @@
     class="referenceApp bg-white flex flex-col items-center gap-6 md:gap-12 justify-center pb-[2%] pt-[6%]"
   >
     <h2
-      class="text-black text-lg sm:text-lg md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-custom-font -rotate-3 font-black custom-font"
+      class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl -rotate-3 font-black custom-font"
     >
       REFERANSLARIMIZ
     </h2>
@@ -19,7 +19,7 @@
 const logoList = [
   1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
   21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,
-  41,42,43,46
+  41,42,43,46,47,48,49,50
 ]
 const logoNumbers = logoList
 

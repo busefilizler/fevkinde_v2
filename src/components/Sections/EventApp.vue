@@ -2,7 +2,6 @@
   <div id="event" class="bg-white w-full eventApp px-[5%] py-[3%]">
     <!-- Başlık: her zaman üstte, sola yaslı -->
     <h2 class="relative flex flex-col items-start -rotate-6 uppercase italic pl-[4%] mb-3 md:mb-10 leading-none">
-      <img src="@/assets/icon1.webp" alt="" role="presentation" class="absolute left-[28%] top-[-33%] w-[30%] md:w-[20%] -z-10" loading="lazy" decoding="async" />
       <span
         class="text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl font-black custom-font -rotate-3"
       >
@@ -18,7 +17,7 @@
     <!-- Maddeler + Video: yan yana, dikey ortalı -->
     <div class="flex flex-row items-center gap-[3%] md:gap-[4%] pt-5 sm:pt-8">
       <div
-        class="w-[35%] md:w-[30%] shrink-0 flex flex-col items-center light-font font-thin text-xxxs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-3xl leading-tight md:leading-loose"
+        class="w-[35%] md:w-[30%] shrink-0 flex flex-col items-center light-font font-thin text-xxxs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl leading-tight md:leading-loose"
       >
         <div>Proje Kurgu ve Yönetimi</div>
         <div>Stratejik Planlama</div>
